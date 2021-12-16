@@ -3,11 +3,19 @@
 .resume {
   display: flex;
   flex-direction: column;
+  @media (min-width: 992px) {
+    flex-direction: row;
+  }
 
   &-image {
     max-height: 401px;
     margin: 93px 16px 0 16px;
     border-radius: 8px;
+    @media (min-width: 992px) {
+      margin: 133px 0 0 142px;
+      max-height: 547px;
+      max-width: 448px;
+    }
   }
 
   &-title {
@@ -17,6 +25,12 @@
     font-weight: normal;
     line-height: 40px;
     letter-spacing: 0.25px;
+    @media (min-width: 992px) {
+      margin: 133px 0 0 140px;
+      font-size: 60px;
+      line-height: 71px;
+      letter-spacing: -0.5px;
+    }
   }
 
   &-description {
@@ -27,10 +41,17 @@
     color: white;
     margin: 24px 16px 0 16px;
     letter-spacing: 0.44px;
+    @media (min-width: 992px) {
+      margin: 24px 142px 0 140px;
+      max-width: 568px;
+    }
   }
   &-email {
     margin: 10px 0 0 16px;
     letter-spacing: 0.44px;
+    @media (min-width: 992px) {
+      margin: 10px 0 0 140px;
+    }
   }
 }
 
@@ -53,6 +74,13 @@
     display: flex;
     justify-content: center;
     font-weight: normal;
+    margin: 24px 0 32px 0;
+    @media (min-width: 992px) {
+      margin: 128px 0 60px 0;
+      font-size: 34px;
+      line-height: 40px;
+      letter-spacing: 0.25px;
+    }
   }
 
   &-card {
@@ -62,6 +90,20 @@
     margin: 0 15px 24px 15px;
     background-color: $colorRellenos;
     border-radius: 8px;
+    @media (min-width: 992px) {
+      max-width: 354px;
+      max-height: 298px;
+      padding: 24px 24px 24px 24px;
+      margin: 12px 12px 12px 12px;
+    }
+
+    &-desktop {
+      @media (min-width: 992px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
 
     &-title {
       font-size: 20px;
@@ -70,6 +112,11 @@
       font-weight: normal;
       line-height: 24px;
       letter-spacing: 0.15px;
+      @media (min-width: 992px) {
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.25px;
+      }
     }
 
     &-text {
@@ -78,6 +125,13 @@
       margin: 0 0 0 0;
       line-height: 20px;
       letter-spacing: 0.25px;
+      @media (min-width: 992px) {
+        max-height: 140px;
+        max-width: 306px;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.44px;
+      }
     }
   }
 }
@@ -85,17 +139,36 @@
 footer {
   display: flex;
   flex-direction: column;
+  @media (min-width: 992px) {
+    margin: 0 142px 0 142px;
+  }
 }
 
 .sumary {
   display: flex;
   flex-direction: column;
   margin-bottom: 48px;
+  @media (min-width: 992px) {
+    margin-top: 116px;
+    border-top: 1px solid $grayBorder;
+    padding-top: 63px;
+  }
+
+  &-desktop {
+    @media (min-width: 992px) {
+      display: flex;
+      justify-content: space-between;
+      max-width: 716px;
+    }
+  }
 
   &-portfolio {
     display: flex;
     justify-content: center;
     margin: 32px 0 32px 0;
+    @media (min-width: 992px) {
+      margin: 0;
+    }
   }
 
   &-link {
