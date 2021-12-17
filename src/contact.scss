@@ -1,0 +1,119 @@
+@import "_variables", "_styles";
+
+.contact {
+  &-description {
+    margin-top: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-title {
+      color: white;
+      font-size: 34px;
+      line-height: 40px;
+      letter-spacing: 0.25px;
+      font-weight: normal;
+      margin: 0 0 0 0;
+    }
+    &-text {
+      color: white;
+      margin: 16px 16px 0 16px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 24px 24px;
+  margin: 0 16px 24px 16px;
+  background-color: $colorRellenos;
+  border-radius: 8px;
+
+  &-name {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 16px;
+    label {
+      margin-bottom: 8px;
+      line-height: 28px;
+    }
+    input {
+      background-color: $backgroundColor;
+      width: 280px;
+      height: 60px;
+      border: 1px $grayBorder solid;
+      border-radius: 8px;
+      color: $grisPlaceholder;
+      padding-left: 20px;
+      margin-bottom: 24px;
+    }
+    #ph-text::placeholder {
+      color: $grisPlaceholder;
+      font-size: 16px;
+    }
+  }
+
+  &-mail {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 16px;
+    label {
+      margin-bottom: 8px;
+      line-height: 28px;
+    }
+    input {
+      background-color: $backgroundColor;
+      width: 280px;
+      height: 60px;
+      border: 1px $grayBorder solid;
+      border-radius: 8px;
+      color: $grisPlaceholder;
+      padding-left: 20px;
+      margin-bottom: 24px;
+    }
+    #ph-text::placeholder {
+      color: $grisPlaceholder;
+      font-size: 16px;
+    }
+  }
+
+  &-menssage {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 16px;
+    label {
+      margin-bottom: 8px;
+      line-height: 28px;
+    }
+    input {
+      background-color: $backgroundColor;
+      width: 280px;
+      height: 60px;
+      border: 1px $grayBorder solid;
+      border-radius: 8px;
+      color: $grisPlaceholder;
+      padding-left: 20px;
+      margin-bottom: 24px;
+    }
+    #ph-text::placeholder {
+      color: $grisPlaceholder;
+      font-size: 16px;
+    }
+  }
+
+  button {
+    background-color: $primaryColor;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 286px;
+    height: 48px;
+  }
+}
