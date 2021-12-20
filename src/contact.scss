@@ -1,11 +1,21 @@
 @import "_variables", "_styles";
 
 .contact {
+  @media (min-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &-description {
     margin-top: 93px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width: 992px) {
+      margin-top: 136px;
+    }
+
     &-title {
       color: white;
       font-size: 34px;
@@ -13,7 +23,14 @@
       letter-spacing: 0.25px;
       font-weight: normal;
       margin: 0 0 0 0;
+      @media (min-width: 992px) {
+        font-size: 60px;
+        line-height: 71px;
+        letter-spacing: -0.5px;
+        font-style: normal;
+      }
     }
+
     &-text {
       color: white;
       margin: 16px 16px 24px 16px;
@@ -21,6 +38,13 @@
       font-size: 14px;
       line-height: 24px;
       letter-spacing: 0.1px;
+      @media (min-width: 992px) {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.15px;
+        margin-top: 16px;
+        margin-bottom: 44px;
+      }
     }
   }
 }
@@ -32,6 +56,11 @@
   margin: 0 16px 64px 16px;
   background-color: $colorRellenos;
   border-radius: 8px;
+  @media (min-width: 992px) {
+    max-width: 447px;
+    align-items: center;
+    margin-bottom: 128px;
+  }
 
   &-name {
     display: flex;
@@ -51,6 +80,9 @@
       color: $grisPlaceholder;
       padding-left: 20px;
       margin-bottom: 24px;
+      @media (min-width: 992px) {
+        width: 399px;
+      }
     }
     #ph-text::placeholder {
       color: $grisPlaceholder;
@@ -76,6 +108,9 @@
       color: $grisPlaceholder;
       padding-left: 20px;
       margin-bottom: 24px;
+      @media (min-width: 992px) {
+        width: 399px;
+      }
     }
 
     #ph-text::placeholder {
@@ -116,6 +151,9 @@
     border-radius: 8px;
     width: 280px;
     height: 48px;
+    @media (min-width: 992px) {
+      width: 399px;
+    }
   }
 }
 
@@ -129,6 +167,9 @@ textarea {
   padding-left: 20px;
   padding-top: 16px;
   margin-bottom: 24px;
+  @media (min-width: 992px) {
+    width: 399px;
+  }
 }
 
 textarea::placeholder {
