@@ -165,3 +165,9 @@ button {
 .justify-between {
   justify-content: space-between;
 }
+
+.footer__margin {
+  @media (min-width: 992px) {
+    max-width: 716px;
+  }
+}

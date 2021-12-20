@@ -16,7 +16,7 @@
     }
     &-text {
       color: white;
-      margin: 16px 16px 0 16px;
+      margin: 16px 16px 24px 16px;
       text-align: center;
       font-size: 14px;
       line-height: 24px;
@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: column;
   padding: 24px 24px 24px 24px;
-  margin: 0 16px 24px 16px;
+  margin: 0 16px 64px 16px;
   background-color: $colorRellenos;
   border-radius: 8px;
 
@@ -77,6 +77,7 @@
       padding-left: 20px;
       margin-bottom: 24px;
     }
+
     #ph-text::placeholder {
       color: $grisPlaceholder;
       font-size: 16px;
@@ -95,7 +96,7 @@
     input {
       background-color: $backgroundColor;
       width: 280px;
-      height: 60px;
+      height: 150px;
       border: 1px $grayBorder solid;
       border-radius: 8px;
       color: $grisPlaceholder;
@@ -113,7 +114,25 @@
     color: white;
     font-size: 16px;
     border-radius: 8px;
-    width: 286px;
+    width: 280px;
     height: 48px;
   }
+}
+
+textarea {
+  background-color: $backgroundColor;
+  width: 280px;
+  height: 150px;
+  border: 1px $grayBorder solid;
+  border-radius: 8px;
+  color: $grisPlaceholder;
+  padding-left: 20px;
+  padding-top: 16px;
+  margin-bottom: 24px;
+}
+
+textarea::placeholder {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.44px;
 }
